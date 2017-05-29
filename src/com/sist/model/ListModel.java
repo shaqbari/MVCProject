@@ -32,14 +32,14 @@ public class ListModel implements Model {
 		//==>JSP·Î Àü¼Û
 		req.setAttribute("list", list);
 		
-		EmpVO empVO=null;
+		/*EmpVO empVO=null;
 		for(EmpVO v:list){
 			if(empVO.getEmpno()==Integer.parseInt(empno)){
 				empVO=v;
 				
 			}			
-		}
-		req.setAttribute("empVO", empVO);
+		}*/
+		//req.setAttribute("empVO", empVO);
 	}
 
 }

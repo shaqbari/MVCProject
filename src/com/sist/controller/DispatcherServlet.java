@@ -59,7 +59,7 @@ public class DispatcherServlet extends HttpServlet {
 					jspMap.put(strCmd[i], strJsp[i]);
 				}
 			} catch (Exception e) {
-				System.out.println(e.getMessage());
+				System.out.println("DispatcherServlet 클래스 올릴때 "+e.getMessage());
 			}
 		
 	}
@@ -81,7 +81,7 @@ public class DispatcherServlet extends HttpServlet {
 			rd.forward(request, response);
 			
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("DispatcherServlet 요청받고 전송시 "+ e.getMessage());
 		}
 	}
 
