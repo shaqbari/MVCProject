@@ -23,23 +23,26 @@ public class ListModel implements Model {
 		if(empno==null){
 			empno="1";			
 		}
+		System.out.println("empno는"+empno);
 		
 		List<EmpVO> list=new ArrayList<EmpVO>();
 		list.add(new EmpVO(1, "홍길동", "대리"));
 		list.add(new EmpVO(2, "김길수", "부장"));
 		list.add(new EmpVO(3, "나난나", "사원"));
 		
-		//==>JSP로 전송
 		req.setAttribute("list", list);
+		//==>JSP로 전송
 		
-		/*EmpVO empVO=null;
+		EmpVO empVO=null;
 		for(EmpVO v:list){
-			if(empVO.getEmpno()==Integer.parseInt(empno)){
+			if(v.getEmpno()==Integer.parseInt(empno)){
 				empVO=v;
 				
 			}			
-		}*/
-		//req.setAttribute("empVO", empVO);
+		}
+		System.out.println("empVO는 "+empVO);
+
+		req.setAttribute("empVO", empVO);
 	}
 
 }

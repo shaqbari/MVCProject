@@ -40,10 +40,10 @@
 		 			<td>${vo.job}</td>
 		 		</tr>		 		
 		 	</c:forEach>
-		 <%--</table>
+		 </table>
 		 사번:${empVO.empno}<br>
 		 이름:${empVO.ename}<br>
-		 직위:${empVO.job}--%>
+		 직위:${empVO.job}
 	</center>
 </body>
 </html>
